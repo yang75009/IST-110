@@ -1,0 +1,108 @@
+/* Neutral academic theme: grayscale + subtle accent color */
+:root {
+    --background: #f8f9fa;
+    --text-color: #222;
+    --accent: #2c3e50;
+    --light-accent: #dbe0e6;
+    --max-width: 900px;
+    --border-radius: 6px;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    background: var(--background);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Center content and control width */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/* Header and Navigation */
+header {
+    background: var(--accent);
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a.active, nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Section Formatting */
+section {
+    margin-top: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid var(--light-accent);
+    padding-bottom: 0.3rem;
+}
+
+/* Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border: 1px solid var(--light-accent);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+}
+
+.btn:hover {
+    background: #1a252f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--accent);
+    color: white;
+    margin-top: 2rem;
+}
