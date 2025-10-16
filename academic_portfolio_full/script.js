@@ -1,0 +1,1 @@
+<the full JS from earlier detailed version goes here>

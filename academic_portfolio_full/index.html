@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Your Name</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Your Name</h1>
+        <p class="subtitle">Researcher | Academic | Creator</p>
+        <a href="#projects" class="btn hero-btn">Explore Projects</a>
+      </div>
+    </section>
+    <section id="projects" class="projects-preview">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <a href="project.html?proj=project1" class="project-card">
+          <div class="project-image-wrapper">
+            <img src="images/project1-thumb.jpg" alt="Project 1 thumbnail" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Project Title 1</h3>
+            <p>Brief description or tagline of what this project is about.</p>
+          </div>
+        </a>
+        <a href="project.html?proj=project2" class="project-card">
+          <div class="project-image-wrapper">
+            <img src="images/project2-thumb.jpg" alt="Project 2 thumbnail" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Project Title 2</h3>
+            <p>Another short description for that project.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="about" class="about-me">
+      <h2>About Me</h2>
+      <p>I am a researcher in [Your Field]. My work spans X, Y, and Z. This site collects my projects, publications, and contributions.</p>
+      <img src="images/your-photo.jpg" alt="Portrait of Your Name" loading="lazy" class="portrait" />
+    </section>
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:youremail@domain.com">youremail@domain.com</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
