@@ -8,6 +8,15 @@
     --border-radius: 6px;
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2vw auto; /* Margins scale with viewport width */
+  padding: 1vw;     /* Optional: Padding scales too */
+  background-color: #f8f9fa;
+  transition: margin 0.3s ease; /* Smooth transition when resizing */
+}
+
 body {
     font-family: 'Georgia', serif;
     margin: 0;
