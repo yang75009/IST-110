@@ -14,6 +14,58 @@
     --padding: 1vw; /*vw = 1% of window width*/
     --transition: margin 0.3s ease; /*Smooth transition when resizing */
 }
+/* Fixed left navigation bar */
+.side-nav {
+  position: fixed;        /* Keeps it locked in place */
+  top: 0;
+  left: 0;
+  height: 100vh;          /* Full vertical height */
+  width: 220px;           /* Fixed width */
+  background-color: #222; /* Dark neutral tone */
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;       /* Scroll if content overflows */
+}
+
+.side-nav h2 {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 0.5em;
+}
+
+/* Navigation links */
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-nav li {
+  margin: 1em 0;
+}
+
+.side-nav a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.side-nav a:hover {
+  color: #fff;
+  transform: translateX(4px);
+}
+
+/* Main content shifts to the right */
+.main-content {
+  margin-left: 240px; /* Keeps space for sidebar */
+  padding: 40px;
+  box-sizing: border-box;
+}
 
 body {
     font-family: 'Georgia', serif;
