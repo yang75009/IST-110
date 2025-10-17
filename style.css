@@ -1,4 +1,8 @@
-/* Neutral academic theme: grayscale + subtle accent color */
+/* Neutral academic theme: grayscale + subtle accent color 
+#faf9fa: Light grayish magenta
+#faf8fa: Light gray
+
+*/
 :root {
     --background: #f8f9fa;
     --text-color: #222;
@@ -7,7 +11,7 @@
     --max-width: 1200px;
     --border-radius: 6px;
     --margin: 2vw auto; /* Margins scale with viewport width */
-    --padding: 1vw;
+    --padding: 1vw; /*vw = 1% of window width*/
     --transition: margin 0.3s ease; /*Smooth transition when resizing */
 }
 
@@ -108,4 +112,5 @@ footer {
     background: var(--accent);
     color: white;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
