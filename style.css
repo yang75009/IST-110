@@ -4,17 +4,11 @@
     --text-color: #222;
     --accent: #2c3e50;
     --light-accent: #dbe0e6;
-    --max-width: 900px;
+    --max-width: 1200px;
     --border-radius: 6px;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 2vw auto; /* Margins scale with viewport width */
-  padding: 1vw;     /* Optional: Padding scales too */
-  background-color: #f8f9fa;
-  transition: margin 0.3s ease; /* Smooth transition when resizing */
+    --margin: 2vw auto; /* Margins scale with viewport width */
+    --padding: 1vw;
+    --transition: margin 0.3s ease; /*Smooth transition when resizing */
 }
 
 body {
